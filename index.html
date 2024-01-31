@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        
+            background-color:#c3f27c;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+.h2{
+position:absolute;
+top:10px;
+font-size:38px;
+color:#4d4f4a;
+}
+
+        .form-container {
+            position:relative;
+            top:100px;
+             background-color: #6da9cf;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+        }
+        .form-container:hover{
+        
+         box-shadow:  4px 4px 4px 4px black;
+         }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            background-color: #1c86c9;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color:#07324d ;
+        }
+    </style>
+</head>
+<body>
+<h2 class="h2">Robotics Bootcamp</h2>
+<div class="form-container">
+    <form >
+        <label for="Name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Full Name">
+
+        <label for="Email">Email:</label>
+        <input type="email" required placeholder="email">
+
+        <label for="Phone no">Phone no:</label>
+        <input type="Phone no" required  placeholder="Phone no">
+
+        <label for="College">College:</label>
+        <input type="email"  required placeholder="college name">
+
+        <label for="specialization">specialization:</label>
+        <input type="specialization" required placeholder="specialization">
+        
+        <label for="City">City:</label>
+        <input type="City"  required placeholder="city name">
+        
+ 
+
+        <label for="message">Why do you want to join Robotics Bootcamp?</label>
+        <textarea id="message" name="message" rows="7" required placeholder="tell us in 100 words"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
+
